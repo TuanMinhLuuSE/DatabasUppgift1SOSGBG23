@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="parking.png" />
+    <None Remove="w213.png" />
+    <None Remove="w214.png" />
+    <None Remove="xc60.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="parking.png" />
+    <Resource Include="w213.png" />
+    <Resource Include="w214.png" />
+    <Resource Include="xc60.png" />
+  </ItemGroup>
+
+</Project>
